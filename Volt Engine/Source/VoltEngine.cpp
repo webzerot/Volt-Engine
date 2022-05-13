@@ -4,9 +4,13 @@
 #include <Windows.h>
 
 
+#include "../Games/SampleGame.h"
+#include "../Headers/VoltEngine.h"
+
+
 int WINDOW_WIDTH = 700;
 int WINDOW_HEIGHT = 500;
-const char* WINDOW_TITLE = "Shift Engine Window";
+const char* WINDOW_TITLE = "Volt Engine Window";
 
 
 sf::Clock deltaClock; // clock used for the calculation of delta time
@@ -21,7 +25,7 @@ int main(int argc, char* argv[]) {
 	sf::RenderWindow Main_Engine_Window(sf::VideoMode(WINDOW_WIDTH, WINDOW_HEIGHT), WINDOW_TITLE, sf::Style::Default);
 
 	// code on start after the window creation
-	//Start(Main_Engine_Window);
+	Start(Main_Engine_Window);
 
 
 	while (Main_Engine_Window.isOpen()) {
@@ -36,20 +40,19 @@ int main(int argc, char* argv[]) {
 				Main_Engine_Window.close();
 			}
 
-			//EventUpdate(Main_Engine_Window_Event, delta_time);
+			EventUpdate(Main_Engine_Window_Event, delta_time);
 
 
 			// keyboard keydown events
 			if (Main_Engine_Window_Event.type == sf::Event::KeyPressed) {
 				if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space)) {
 					// do something when space is pressed
-					std::cout << "Hello" << std::endl;
 				}
 			}
 		}
 
 		// -----------Main Code--------------
-		//Update(Main_Engine_Window, delta_time);
+		Update(Main_Engine_Window, delta_time);
 
 
 		// updating display
