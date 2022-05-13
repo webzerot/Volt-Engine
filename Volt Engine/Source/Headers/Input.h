@@ -31,4 +31,3 @@ public:
 	bool GetKey(sf::Event& evt, int KeyCode);
 
 };
-input Input;

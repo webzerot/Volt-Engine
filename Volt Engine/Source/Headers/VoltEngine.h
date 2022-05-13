@@ -51,4 +51,7 @@ public:
 		ShowWindow(GetConsoleWindow(), SW_SHOW);
 	}
 };
+
+
 console Console;
+input Input;
