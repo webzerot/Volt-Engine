@@ -149,12 +149,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Source\Classes\Input.cpp" />
     <ClCompile Include="Source\Classes\Button.cpp" />
     <ClCompile Include="Source\VoltEngine.cpp" />
     <ClCompile Include="Source\Classes\Text.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Games\SampleGame.h" />
+    <ClInclude Include="Source\Headers\Input.h" />
     <ClInclude Include="Source\Headers\Button.h" />
     <ClInclude Include="Source\Headers\SoundClass.h" />
     <ClInclude Include="Source\Headers\VoltEngine.h" />
