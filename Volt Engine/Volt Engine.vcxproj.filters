@@ -18,15 +18,15 @@
     <ClCompile Include="Source\VoltEngine.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Classes\Button.cpp">
+    <ClCompile Include="Source\Classes\Button.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Headers\Button.h">
+    <ClInclude Include="Source\Headers\Button.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Headers\VoltEngine.h">
+    <ClInclude Include="Source\Headers\VoltEngine.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Games\SampleGame.h">

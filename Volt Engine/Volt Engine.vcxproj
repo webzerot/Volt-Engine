@@ -149,13 +149,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Classes\Button.cpp" />
+    <ClCompile Include="Source\Classes\Button.cpp" />
     <ClCompile Include="Source\VoltEngine.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Games\SampleGame.h" />
-    <ClInclude Include="Headers\Button.h" />
-    <ClInclude Include="Headers\VoltEngine.h" />
+    <ClInclude Include="Source\Headers\Button.h" />
+    <ClInclude Include="Source\Headers\VoltEngine.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

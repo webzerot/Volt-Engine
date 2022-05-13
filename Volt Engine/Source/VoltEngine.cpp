@@ -4,9 +4,9 @@
 #include <Windows.h>
 
 
-#include "../Games/SampleGame.h"
-#include "../Headers/VoltEngine.h"
+#include "Headers/VoltEngine.h"
 
+#include "../Games/SampleGame.h"
 
 int WINDOW_WIDTH = 700;
 int WINDOW_HEIGHT = 500;
