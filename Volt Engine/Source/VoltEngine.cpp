@@ -43,6 +43,7 @@ int main(int argc, char* argv[]) {
 			if (Main_Engine_Window_Event.type == sf::Event::KeyPressed) {
 				if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space)) {
 					// do something when space is pressed
+					std::cout << "Hello" << std::endl;
 				}
 			}
 		}
