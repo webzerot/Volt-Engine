@@ -11,6 +11,7 @@
 #include "Text.h"
 #include "SoundClass.h"
 #include "Input.h"
+#include "GameObject.h"
 
 // pre declared functions
 void Start(sf::RenderWindow& window);
