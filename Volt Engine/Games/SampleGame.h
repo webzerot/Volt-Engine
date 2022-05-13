@@ -17,6 +17,4 @@ void EventUpdate(EventArg) {
 
 void Update(UpdateArg) {
 	Set_Background_Color(window,20, 51, 100);
-
-	txt.DrawAt(window);
 }
