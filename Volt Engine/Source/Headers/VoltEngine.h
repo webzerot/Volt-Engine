@@ -9,6 +9,7 @@
 
 #include "Button.h"
 #include "Text.h"
+#include "SoundClass.h"
 
 // pre declared functions
 void Start(sf::RenderWindow& window);
