@@ -8,6 +8,7 @@
 #include <Windows.h>
 
 #include "Button.h"
+#include "Text.h"
 
 // pre declared functions
 void Start(sf::RenderWindow& window);
