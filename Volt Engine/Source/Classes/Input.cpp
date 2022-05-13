@@ -29,4 +29,4 @@ bool input::GetKey(sf::Event& evt, int KeyCode) {
 	}
 	return false;
 }
-input Input;
+

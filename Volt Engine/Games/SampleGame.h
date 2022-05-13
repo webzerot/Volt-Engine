@@ -8,6 +8,10 @@ void Start(StartArg) {
 
 void EventUpdate(EventArg) {
 
+	if (Input.GetKeyDown(evt, Key::Space)) {
+		print("SpaceBar is Pressed");
+	}
+
 }
 
 void Update(UpdateArg) {
