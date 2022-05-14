@@ -1,6 +1,5 @@
 #pragma once
 
-
 class Text {
 
 private:
@@ -14,7 +13,6 @@ private:
 	int TextColor[3] = { 255,255,255 };
 
 	float PosX = 0, PosY = 0;
-
 
 public:
 

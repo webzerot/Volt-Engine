@@ -3,6 +3,8 @@
 #include <SFML/Audio.hpp>
 #include <Windows.h>
 
+#include <box2d/box2d.h>
+
 
 #include "Headers/VoltEngine.h"
 
@@ -14,7 +16,6 @@ const char* WINDOW_TITLE = "Volt Engine Window";
 
 
 sf::Clock deltaClock; // clock used for the calculation of delta time
-
 
 int main(int argc, char* argv[]) {
 

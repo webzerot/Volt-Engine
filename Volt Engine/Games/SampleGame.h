@@ -1,6 +1,7 @@
 #pragma once
 
 #include "../Source/Headers/VoltEngine.h"
+#include <box2d/box2d.h>
 
 void Start(StartArg) {
 
@@ -11,7 +12,6 @@ void EventUpdate(EventArg) {
 	if (Input.GetKeyDown(evt, Key::Space)) {
 		print("SpaceBar is Pressed");
 	}
-
 }
 
 void Update(UpdateArg) {

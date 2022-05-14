@@ -43,16 +43,13 @@ float Distance_Between(float object1X, float object1Y, float object2X, float obj
 	return distance;
 }
 
-class console {
+class Console {
 public:
-	void Hide() {
+	static void Hide() {
 		ShowWindow(GetConsoleWindow(), SW_HIDE);
 	}
-	void Show() {
+	static void Show() {
 		ShowWindow(GetConsoleWindow(), SW_SHOW);
 	}
 };
-
-
-console Console;
 input Input;
