@@ -3,9 +3,6 @@
 #include <SFML/Audio.hpp>
 #include <Windows.h>
 
-#include <box2d/box2d.h>
-
-
 #include "Headers/VoltEngine.h"
 
 #include "../Games/SampleGame.h"
@@ -16,7 +13,6 @@ const char* WINDOW_TITLE = "Volt Engine Window";
 
 
 sf::Clock deltaClock; // clock used for the calculation of delta time
-
 int main(int argc, char* argv[]) {
 
 	// Show Console On Start
@@ -27,7 +23,6 @@ int main(int argc, char* argv[]) {
 
 	// code on start after the window creation
 	Start(Main_Engine_Window);
-
 
 	while (Main_Engine_Window.isOpen()) {
 		sf::Time Time_elapsed_from_last_frame = deltaClock.restart(); // getting the time of each frame

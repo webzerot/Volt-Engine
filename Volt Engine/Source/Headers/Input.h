@@ -14,7 +14,7 @@ public:
 };
 
 
-class input {
+class Input {
 
 private:
 

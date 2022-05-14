@@ -52,4 +52,4 @@ public:
 		ShowWindow(GetConsoleWindow(), SW_SHOW);
 	}
 };
-input Input;
+Input input;
