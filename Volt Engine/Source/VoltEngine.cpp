@@ -19,7 +19,7 @@ int main(int argc, char* argv[]) {
 	ShowWindow(GetConsoleWindow(), SW_SHOW);
 
 	// Creating the main engine Window
-	sf::RenderWindow Main_Engine_Window(sf::VideoMode(WINDOW_WIDTH, WINDOW_HEIGHT), WINDOW_TITLE, sf::Style::Default);
+	sf::RenderWindow Main_Engine_Window(sf::VideoMode(WINDOW_WIDTH, WINDOW_HEIGHT), WINDOW_TITLE, sf::Style::Close | sf::Style::Titlebar);
 
 	// code on start after the window creation
 	Start(Main_Engine_Window);
