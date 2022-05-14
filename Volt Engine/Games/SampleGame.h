@@ -3,9 +3,11 @@
 #include "../Source/Headers/VoltEngine.h"
 
 Button myBtn(100, 50, "Click");
+Text myTxt("Click this button", 30);
 
 void Start(StartArg) {
 	myBtn.SetPosition(300, 225);
+	myTxt.SetPosition(250, 150);
 }
 
 void EventUpdate(EventArg) {
@@ -23,4 +25,5 @@ void Update(UpdateArg) {
 	Set_Background_Color(window,20, 51, 100);
 
 	myBtn.DrawAt(window);
+	myTxt.DrawAt(window);
 }
