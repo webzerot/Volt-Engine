@@ -43,6 +43,10 @@ float Distance_Between(float object1X, float object1Y, float object2X, float obj
 	return distance;
 }
 
+void Check_For_Collision(GameObject firstObject, GameObject secondObject) {
+
+}
+
 class Console {
 public:
 	static void Hide() {
