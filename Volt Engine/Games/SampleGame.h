@@ -5,6 +5,8 @@
 Button myBtn(100, 50, "Click");
 Text myTxt("Click this button", 30);
 
+GameObject putin(150, 100, "images.jpg");
+
 void Start(StartArg) {
 	myBtn.SetPosition(300, 225);
 	myTxt.SetPosition(250, 150);
@@ -21,9 +23,12 @@ void EventUpdate(EventArg) {
 	}
 }
 
+float posX = 0;
 void Update(UpdateArg) {
 	Set_Background_Color(window,20, 51, 100);
 
 	myBtn.DrawAt(window);
 	myTxt.DrawAt(window);
+
+	putin.DrawAt(window);
 }

@@ -149,6 +149,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Source\Classes\GameObject.cpp" />
     <ClCompile Include="Source\Classes\Input.cpp" />
     <ClCompile Include="Source\Classes\Button.cpp" />
     <ClCompile Include="Source\VoltEngine.cpp" />
