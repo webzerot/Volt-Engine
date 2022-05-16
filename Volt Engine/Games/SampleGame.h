@@ -23,7 +23,6 @@ void EventUpdate(EventArg) {
 	}
 }
 
-float posX = 0;
 void Update(UpdateArg) {
 	Set_Background_Color(window,20, 51, 100);
 
