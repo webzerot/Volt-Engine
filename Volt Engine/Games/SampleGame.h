@@ -9,7 +9,6 @@ GameObject putin(150, 100, "images.jpg");
 
 void Start(StartArg) {
 
-	Set_Window_Title(window,"Hello there");
 	myBtn.SetPosition(300, 225);
 	myTxt.SetPosition(250, 150);
 }
@@ -25,8 +24,11 @@ void EventUpdate(EventArg) {
 	}
 }
 
+int num = 10;
 void Update(UpdateArg) {
 	Set_Background_Color(window,20, 51, 100);
+
+	Debug::Log(num);
 
 	myBtn.DrawAt(window);
 	myTxt.DrawAt(window);

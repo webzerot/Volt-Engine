@@ -13,6 +13,7 @@
 #include "Input.h"
 #include "GameObject.h"
 #include "VoltEngineFunctions.h"
+#include "Debug.h"
 
 // pre declared functions
 void Start(sf::RenderWindow& window);
