@@ -21,6 +21,10 @@ void Set_Window_Title(sf::RenderWindow& window, const std::string& title) {
 	window.setTitle(title);
 }
 
+void Set_Window_Size(sf::RenderWindow& window, int Width, int Height) {
+	window.setSize(sf::Vector2u(Width, Height));
+}
+
 float Distance_Between(float object1X, float object1Y, float object2X, float object2Y) {
 
 	float distance = sqrtf(powf(object1X - object2X, 2) + powf(object1Y - object2Y, 2));
