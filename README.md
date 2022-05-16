@@ -1,1 +1,1 @@
-Game engine made with c++ and sfml
+2D Game engine made with c++ and sfml
