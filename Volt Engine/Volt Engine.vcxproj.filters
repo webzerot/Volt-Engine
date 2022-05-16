@@ -53,5 +53,8 @@
     <ClInclude Include="Source\Headers\GameObject.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Source\Headers\VoltEngineFunctions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -163,6 +163,7 @@
     <ClInclude Include="Source\Headers\SoundClass.h" />
     <ClInclude Include="Source\Headers\VoltEngine.h" />
     <ClInclude Include="Source\Headers\Text.h" />
+    <ClInclude Include="Source\Headers\VoltEngineFunctions.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -8,6 +8,8 @@ Text myTxt("Click this button", 30);
 GameObject putin(150, 100, "images.jpg");
 
 void Start(StartArg) {
+
+	Set_Window_Title(window,"Hello there");
 	myBtn.SetPosition(300, 225);
 	myTxt.SetPosition(250, 150);
 }
