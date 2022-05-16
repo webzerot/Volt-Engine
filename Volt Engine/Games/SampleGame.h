@@ -24,11 +24,9 @@ void EventUpdate(EventArg) {
 	}
 }
 
-int num = 10;
+float floatNum = 25.0f;
 void Update(UpdateArg) {
 	Set_Background_Color(window,20, 51, 100);
-
-	Debug::Log(num);
 
 	myBtn.DrawAt(window);
 	myTxt.DrawAt(window);
