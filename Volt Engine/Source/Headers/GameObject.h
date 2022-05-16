@@ -7,6 +7,8 @@ private:
 	sf::RectangleShape GameObject_RectangleShape;
 	sf::Texture GameObject_Texture;
 
+	sf::Color GameObject_Color;
+
 	bool useTexture = true;
 
 	float GameObject_Position_X = 0;
@@ -22,6 +24,8 @@ public:
 
 	// sets the position of the GameObject
 	void Set_Position(float x, float y);
+
+	void Set_Color(int Red, int Green, int Blue, int Alpha = 255);
 
 	// getters
 	sf::RectangleShape Get_RectangleShape() {

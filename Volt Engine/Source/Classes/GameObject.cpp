@@ -21,20 +21,23 @@ GameObject::GameObject(float Width, float Height, std::string Texture_File_Path)
 			GameObject_Texture.loadFromFile(Texture_File_Path);
 	
 	// loading texture to Sprite
-
 		if (useTexture) {
 			GameObject_RectangleShape.setTexture(&GameObject_Texture);
 		}
-
-	if (!useTexture) {
-		//GameObject_RectangleShape.setFillColor(GameObject_Color);
-	}
-
 }
 
 void GameObject::Set_Position(float x, float y) {
 	GameObject_Position_X = x;
 	GameObject_Position_Y = y;
+}
+
+void GameObject::Set_Color(int Red, int Green, int Blue, int Alpha) {
+	GameObject_Color.r = Red;
+	GameObject_Color.g = Green;
+	GameObject_Color.b = Blue;
+	GameObject_Color.a = Alpha;
+
+	GameObject_RectangleShape.setFillColor(GameObject_Color);
 }
 
 void GameObject::DrawAt(sf::RenderWindow& window) {
