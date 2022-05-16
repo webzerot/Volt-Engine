@@ -43,8 +43,16 @@ float Distance_Between(float object1X, float object1Y, float object2X, float obj
 	return distance;
 }
 
-void Check_For_Collision(GameObject firstObject, GameObject secondObject) {
+bool Check_For_Collision(GameObject firstObject, GameObject secondObject) {
 
+	sf::RectangleShape first_GameObject = firstObject.Get_RectangleShape();
+	sf::RectangleShape Second_GameObject = secondObject.Get_RectangleShape();
+
+	if (first_GameObject.getGlobalBounds().intersects(Second_GameObject.getGlobalBounds())) {
+		return true;
+	}
+
+	return false;
 }
 
 class Console {
