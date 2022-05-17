@@ -32,12 +32,12 @@ float Distance_Between(float object1X, float object1Y, float object2X, float obj
 	return distance;
 }
 
-bool Check_For_Collision(GameObject firstObject, GameObject secondObject) {
+bool Check_For_Collision(GameObject first_GameObject, GameObject second_GameObject) {
 
-	sf::RectangleShape first_GameObject = firstObject.Get_RectangleShape();
-	sf::RectangleShape Second_GameObject = secondObject.Get_RectangleShape();
+	sf::RectangleShape first_rect_shape = first_GameObject.Get_RectangleShape();
+	sf::RectangleShape Second_rect_shape = second_GameObject.Get_RectangleShape();
 
-	if (first_GameObject.getGlobalBounds().intersects(Second_GameObject.getGlobalBounds())) {
+	if (first_rect_shape.getGlobalBounds().intersects(Second_rect_shape.getGlobalBounds())) {
 		return true;
 	}
 

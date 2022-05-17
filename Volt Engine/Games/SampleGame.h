@@ -24,7 +24,7 @@ void EventUpdate(EventArg) {
 	}
 }
 
-float floatNum = 25.0f;
+
 void Update(UpdateArg) {
 	Set_Background_Color(window,20, 51, 100);
 
