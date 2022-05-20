@@ -12,7 +12,7 @@ Vector Vector::LEFT = Vector(-1, 0);
 // check
 float Vector::Length()
 {
-	return sqrt(pow(_x, 2) + pow(_y, 2));
+	return sqrt(powf(_x, 2) + powf(_y, 2));
 }
 
 Vector& Vector::Normalize()
@@ -29,7 +29,7 @@ Vector& Vector::Normalize()
 
 Vector& Vector::Rotate(float angle)
 {
-	float radians = angle * M_PI / 180;
+	float radians = (float)angle * (float)M_PI / 180;
 
 	float cosinus = cos(radians);
 	float sinus = sin(radians);
