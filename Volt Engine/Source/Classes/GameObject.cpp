@@ -7,9 +7,8 @@
 // constructor
 GameObject::GameObject(float Width, float Height, std::string Texture_File_Path) {
 
-	// setting size
-	GameObject_Size_X = Width;
-	GameObject_Size_Y = Height;
+	// setting scale
+	transform.Scale = Vector(Width, Height);
 
 	// checking if the user inserted a file path to a texture
 	if (Texture_File_Path.empty()) {
@@ -27,8 +26,8 @@ GameObject::GameObject(float Width, float Height, std::string Texture_File_Path)
 }
 
 void GameObject::Set_Position(float x, float y) {
-	GameObject_Position_X = x;
-	GameObject_Position_Y = y;
+
+	transform.Position = Vector(x, y);
 }
 
 void GameObject::Set_Color(int Red, int Green, int Blue, int Alpha) {
@@ -42,10 +41,13 @@ void GameObject::Set_Color(int Red, int Green, int Blue, int Alpha) {
 
 void GameObject::DrawAt(sf::RenderWindow& window) {
 	// Setting Size
-	GameObject_RectangleShape.setSize(sf::Vector2f(GameObject_Size_X, GameObject_Size_Y));
+	GameObject_RectangleShape.setSize(sf::Vector2f(transform.Scale.GetX(), transform.Scale.GetY()));
+
+	// Setting rotation of GameObject
+	GameObject_RectangleShape.setRotation(transform.Rotation);
 
 	// setting position
-	GameObject_RectangleShape.setPosition(sf::Vector2f(GameObject_Position_X, GameObject_Position_Y));
+	GameObject_RectangleShape.setPosition(sf::Vector2f(transform.Position.GetX(), transform.Position.GetY()));
 
 	// drawing the object
 	window.draw(GameObject_RectangleShape);

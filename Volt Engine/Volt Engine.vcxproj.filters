@@ -42,6 +42,9 @@
     <ClCompile Include="Source\Classes\Vector.cpp">
       <Filter>Source Files\Maths</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Classes\Transform.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Headers\Button.h">
@@ -73,6 +76,9 @@
     </ClInclude>
     <ClInclude Include="Source\Headers\Vector.h">
       <Filter>Header Files\Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Headers\Transform.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

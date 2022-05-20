@@ -15,6 +15,7 @@
 #include "VoltEngineFunctions.h"
 #include "Debug.h"
 #include "Vector.h"
+#include "Transform.h"
 
 // pre declared functions
 void Start(sf::RenderWindow& window);

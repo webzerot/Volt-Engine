@@ -7,6 +7,8 @@ Text myTxt("Click this button", 30);
 
 GameObject putin(150, 100, "images.jpg");
 
+Vector myVec(100, 200);
+
 void Start(StartArg) {
 
 	myBtn.SetPosition(300, 225);
@@ -23,7 +25,6 @@ void EventUpdate(EventArg) {
 		print("Button is Clicked");
 	}
 }
-
 
 void Update(UpdateArg) {
 	Set_Background_Color(window,20, 51, 100);

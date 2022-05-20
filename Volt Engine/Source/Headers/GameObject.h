@@ -1,4 +1,6 @@
 #pragma once
+#include <SFML/Graphics.hpp>
+#include "Transform.h"
 
 class GameObject {
 
@@ -18,6 +20,10 @@ private:
 	float GameObject_Size_Y = 100;
 
 public:
+
+	Transform transform;
+
+
 	// constructor
 	GameObject(float Width, float Height,
 		std::string Texture_File_Path = "");
