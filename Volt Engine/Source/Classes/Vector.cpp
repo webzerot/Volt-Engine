@@ -29,7 +29,7 @@ Vector& Vector::Normalize()
 
 Vector& Vector::Rotate(float angle)
 {
-	float radians = (float)angle * (float)M_PI / 180;
+	float radians = angle * (float)M_PI / 180;
 
 	float cosinus = cos(radians);
 	float sinus = sin(radians);
