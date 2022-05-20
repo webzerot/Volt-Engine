@@ -14,6 +14,7 @@
 #include "GameObject.h"
 #include "VoltEngineFunctions.h"
 #include "Debug.h"
+#include "Vector.h"
 
 // pre declared functions
 void Start(sf::RenderWindow& window);
