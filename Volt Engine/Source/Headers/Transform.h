@@ -1,5 +1,6 @@
 #pragma once
 #include "Vector.h"
+#include <SFML/Graphics.hpp>
 
 class Transform {
 
@@ -13,4 +14,5 @@ public:
 	Vector Position;
 	Vector Scale;
 	float Rotation = 0;
+
 };
