@@ -155,6 +155,7 @@
     <ClCompile Include="Source\Classes\Button.cpp" />
     <ClCompile Include="Source\VoltEngine.cpp" />
     <ClCompile Include="Source\Classes\Text.cpp" />
+    <ClCompile Include="Vector.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Games\SampleGame.h" />
@@ -166,6 +167,7 @@
     <ClInclude Include="Source\Headers\VoltEngine.h" />
     <ClInclude Include="Source\Headers\Text.h" />
     <ClInclude Include="Source\Headers\VoltEngineFunctions.h" />
+    <ClInclude Include="Vector.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
