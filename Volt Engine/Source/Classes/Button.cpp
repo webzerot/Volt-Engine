@@ -83,22 +83,22 @@ bool Button::Clicked() {
 
 void Button::OnHover() {
 	if (!isTextured) {
-		btnShape.setFillColor(sf::Color(BtnColor[0], BtnColor[1], BtnColor[2], 200));
+		btnShape.setFillColor(sf::Color(BtnColor.r, BtnColor.g, BtnColor.b, 200));
 	}
 	else {
 		btnShape.setFillColor(sf::Color(255, 255, 255, 200));
 	}
 
-	ButtonText.setFillColor(sf::Color(BtnTextColor[0], BtnTextColor[1], BtnTextColor[2], 200));
+	ButtonText.setFillColor(sf::Color(BtnTextColor.r, BtnTextColor.g, BtnTextColor.b, 200));
 }
 void Button::OnIdle() {
 	if (!isTextured) {
-		btnShape.setFillColor(sf::Color(BtnColor[0], BtnColor[1], BtnColor[2], 255));
+		btnShape.setFillColor(sf::Color(BtnColor.r, BtnColor.g, BtnColor.b, 255));
 	}
 	else {
 		btnShape.setFillColor(sf::Color(255, 255, 255, 255));
 	}
 
-	ButtonText.setFillColor(sf::Color(BtnTextColor[0], BtnTextColor[1], BtnTextColor[2], 255));
+	ButtonText.setFillColor(sf::Color(BtnTextColor.r, BtnTextColor.g, BtnTextColor.b, 255));
 }
 

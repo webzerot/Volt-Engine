@@ -20,11 +20,12 @@ int main(int argc, char* argv[]) {
 
 	// Creating the main engine Window
 	sf::RenderWindow Main_Engine_Window(sf::VideoMode(WINDOW_WIDTH, WINDOW_HEIGHT), WINDOW_TITLE, sf::Style::Close | sf::Style::Titlebar);
-
+	Main_Engine_Window.setFramerateLimit(60);
 	// code on start after the window creation
 	Start(Main_Engine_Window);
 
 	while (Main_Engine_Window.isOpen()) {
+		// delta time calculation
 		sf::Time Time_elapsed_from_last_frame = deltaClock.restart(); // getting the time of each frame
 		float delta_time = Time_elapsed_from_last_frame.asSeconds();
 

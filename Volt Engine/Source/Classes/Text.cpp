@@ -51,16 +51,17 @@ void Text::SetPosition(float x, float y) {
 void Text::ChangeText(std::string str) {
 	textOfTextClass = str;
 }
-void Text::SetColor(int red, int green, int blue) {
-	TextColor[0] = red;
-	TextColor[1] = green;
-	TextColor[2] = blue;
+void Text::SetColor(int red, int green, int blue, int Alpha) {
+	TextColor.r = red;
+	TextColor.g = green;
+	TextColor.b = blue;
+	TextColor.a = Alpha;
 }
 
 void Text::DrawAt(sf::RenderWindow& window) {
 
 	// setting color of text
-	text.setFillColor(sf::Color(TextColor[0], TextColor[1], TextColor[2]));
+	text.setFillColor(TextColor);
 
 	// setting string of text
 	text.setString(textOfTextClass);

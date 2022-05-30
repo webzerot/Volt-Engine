@@ -7,9 +7,10 @@ private:
 
 	// properties
 	float buttonPositionX = 0, buttonPositionY = 0;
-	int BtnColor[3] = { 0,70,40 };
-	int BtnTextColor[3] = { 255,255,255 };
 	float ButtonSizeX = 0, ButtonSizeY = 0;
+
+	sf::Color BtnColor = sf::Color(0,70,40);
+	sf::Color BtnTextColor = sf::Color(255,255,255);
 
 	// button
 	sf::Texture btnTexture;
@@ -54,15 +55,17 @@ public:
 		buttonPositionY = yPos;
 	}
 
-	void SetButtonColor(int Red, int Green, int Blue) {
-		BtnColor[0] = Red;
-		BtnColor[1] = Green;
-		BtnColor[2] = Blue;
+	void SetButtonColor(int Red, int Green, int Blue, int Alpha = 255) {
+		BtnColor.r = Red;
+		BtnColor.g = Green;
+		BtnColor.b = Blue;
+		BtnColor.a = Alpha;
 	}
-	void SetTextColor(int Red, int Green, int Blue) {
-		BtnTextColor[0] = Red;
-		BtnTextColor[1] = Green;
-		BtnTextColor[2] = Blue;
+	void SetTextColor(int Red, int Green, int Blue, int Alpha = 255) {
+		BtnTextColor.r = Red;
+		BtnTextColor.g = Green;
+		BtnTextColor.b = Blue;
+		BtnTextColor.a = Alpha;
 	}
 	// changes the text of the button during runtime
 	void ChangeButtonText(std::string& text) {

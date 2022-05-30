@@ -10,7 +10,7 @@ private:
 	std::string textOfTextClass;
 	std::string defaultFontPath = "Anton.ttf";
 
-	int TextColor[3] = { 255,255,255 };
+	sf::Color TextColor = sf::Color(255, 255, 255, 255);
 
 	float PosX = 0, PosY = 0;
 
@@ -23,7 +23,7 @@ public:
 	void SetFont(std::string font_path);
 	void SetPosition(float x, float y);
 	void ChangeText(std::string str);
-	void SetColor(int red, int green, int blue);
+	void SetColor(int red, int green, int blue, int Alpha = 255);
 	// cant be used in start()
 	float GetWidth();
 	// cant be used in start()
