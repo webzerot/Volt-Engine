@@ -1,6 +1,8 @@
 #pragma once
 #include <SFML/Graphics.hpp>
+#include <list>
 #include "Transform.h"
+
 
 class GameObject {
 
@@ -22,6 +24,7 @@ private:
 public:
 
 	Transform transform;
+	bool Automatic_Drawing = true;
 
 
 	// constructor

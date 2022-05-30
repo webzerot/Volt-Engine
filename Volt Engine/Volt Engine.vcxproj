@@ -151,6 +151,7 @@
   <ItemGroup>
     <ClCompile Include="Source\Classes\Debug.cpp" />
     <ClCompile Include="Source\Classes\GameObject.cpp" />
+    <ClCompile Include="Source\Classes\Globals.cpp" />
     <ClCompile Include="Source\Classes\Input.cpp" />
     <ClCompile Include="Source\Classes\Button.cpp" />
     <ClCompile Include="Source\Classes\Transform.cpp" />
@@ -162,6 +163,7 @@
     <ClInclude Include="Games\SampleGame.h" />
     <ClInclude Include="Source\Headers\Debug.h" />
     <ClInclude Include="Source\Headers\GameObject.h" />
+    <ClInclude Include="Source\Headers\Globals.h" />
     <ClInclude Include="Source\Headers\Input.h" />
     <ClInclude Include="Source\Headers\Button.h" />
     <ClInclude Include="Source\Headers\SoundClass.h" />

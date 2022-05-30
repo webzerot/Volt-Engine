@@ -2,9 +2,12 @@
 #include <SFML/Graphics.hpp>
 
 #include "../Headers/Button.h"
+#include "../Headers/Globals.h"
 
 
 Button::Button(float Width, float Height, std::string BtnText, std::string File_Path) {
+
+	ACTIVE_BUTTON_OBJECTS.push_back(this);
 
 	ButtonSizeX = Width;
 	ButtonSizeY = Height;

@@ -17,6 +17,7 @@ private:
 public:
 
 	int FontSize = 10;
+	bool Automatic_Drawing = true;
 
 	Text(std::string str, int font_size = 10, std::string font_path = "");
 	void SetFont(std::string font_path);

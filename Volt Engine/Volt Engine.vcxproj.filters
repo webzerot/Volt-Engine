@@ -45,6 +45,9 @@
     <ClCompile Include="Source\Classes\Transform.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Classes\Globals.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Headers\Button.h">
@@ -78,6 +81,9 @@
       <Filter>Header Files\Maths</Filter>
     </ClInclude>
     <ClInclude Include="Source\Headers\Transform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Headers\Globals.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

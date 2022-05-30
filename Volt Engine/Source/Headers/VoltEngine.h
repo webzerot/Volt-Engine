@@ -16,6 +16,7 @@
 #include "Debug.h"
 #include "Vector.h"
 #include "Transform.h"
+#include "Globals.h"
 
 // pre declared functions
 void Start(sf::RenderWindow& window);

@@ -2,8 +2,12 @@
 #include <iostream>
 
 #include "../Headers/Text.h"
+#include "../Headers/Globals.h"
 
 Text::Text(std::string str, int font_size, std::string font_path) {
+	
+	ACTIVE_TEXT_OBJECTS.push_back(this);
+
 	textOfTextClass = str;
 	FontSize = font_size;
 

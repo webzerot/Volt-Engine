@@ -30,9 +30,4 @@ void Update(UpdateArg) {
 	Set_Background_Color(window,20, 51, 100);
 
 	putin.transform.Position = myVec;
-
-	myBtn.DrawAt(window);
-	myTxt.DrawAt(window);
-
-	putin.DrawAt(window);
 }

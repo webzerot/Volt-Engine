@@ -2,10 +2,12 @@
 #include <iostream>
 
 #include "../Headers/GameObject.h"
-
+#include "../Headers/Globals.h"
 
 // constructor
 GameObject::GameObject(float Width, float Height, std::string Texture_File_Path) {
+
+	ACTIVE_GAME_OBJECTS.push_back(this);
 
 	// setting scale
 	transform.Scale = Vector(Width, Height);

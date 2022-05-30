@@ -51,6 +51,24 @@ int main(int argc, char* argv[]) {
 		Update(Main_Engine_Window, delta_time);
 
 
+		/// ---------------- Drawing -------------////
+		// drawing GameObjects
+		for (GameObject* GameObj : ACTIVE_GAME_OBJECTS) {
+			if (GameObj->Automatic_Drawing)
+				GameObj->DrawAt(Main_Engine_Window);
+		}
+		// drawing Text Objects
+		for (Text* TextObj : ACTIVE_TEXT_OBJECTS) {
+			if (TextObj->Automatic_Drawing)
+				TextObj->DrawAt(Main_Engine_Window);
+		}
+		// drawing Button Objects
+		for (Button* ButtonObj : ACTIVE_BUTTON_OBJECTS) {
+			if (ButtonObj->Automatic_Drawing)
+				ButtonObj->DrawAt(Main_Engine_Window);
+		}
+		/// ---------------- Drawing -------------////
+
 		// updating display
 		Main_Engine_Window.display();
 	}

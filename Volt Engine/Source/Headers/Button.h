@@ -34,6 +34,8 @@ private:
 public:
 	int ButtonTextFontSize = 30;
 
+	bool Automatic_Drawing = true;
+
 	float ButtonOutlineThickness = 2;
 	sf::Color ButtonOutlineColor;
 
