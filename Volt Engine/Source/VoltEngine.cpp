@@ -29,7 +29,6 @@ int main(int argc, char* argv[]) {
 		sf::Time Time_elapsed_from_last_frame = deltaClock.restart(); // getting the time of each frame
 		//float delta_time = Time_elapsed_from_last_frame.asSeconds();
 		Delta_Time = Time_elapsed_from_last_frame.asSeconds();
-
 		// check all the main engine window's events that were triggered since the last iteration of the loop
 		Main_Engine_Window_Event = new sf::Event;
 		while (Main_Engine_Window->pollEvent(*Main_Engine_Window_Event)) {
