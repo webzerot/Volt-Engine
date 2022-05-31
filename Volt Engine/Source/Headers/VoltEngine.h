@@ -18,7 +18,6 @@
 #include "Transform.h"
 #include "Globals.h"
 #include "Random.h"
-#include "Time.h"
 
 // pre declared functions
 void Start(sf::RenderWindow& window);
