@@ -154,6 +154,7 @@
     <ClCompile Include="Source\Classes\Globals.cpp" />
     <ClCompile Include="Source\Classes\Input.cpp" />
     <ClCompile Include="Source\Classes\Button.cpp" />
+    <ClCompile Include="Source\Classes\Random.cpp" />
     <ClCompile Include="Source\Classes\Transform.cpp" />
     <ClCompile Include="Source\VoltEngine.cpp" />
     <ClCompile Include="Source\Classes\Text.cpp" />
@@ -166,6 +167,7 @@
     <ClInclude Include="Source\Headers\Globals.h" />
     <ClInclude Include="Source\Headers\Input.h" />
     <ClInclude Include="Source\Headers\Button.h" />
+    <ClInclude Include="Source\Headers\Random.h" />
     <ClInclude Include="Source\Headers\SoundClass.h" />
     <ClInclude Include="Source\Headers\Transform.h" />
     <ClInclude Include="Source\Headers\VoltEngine.h" />

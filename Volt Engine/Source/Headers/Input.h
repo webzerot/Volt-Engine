@@ -23,12 +23,14 @@ public:
 	mouse Mouse;
 
 	//key codes start from 0 (A = 0, B = 1, C = 2...) or you can use sf::Keyboard::Keyname
-	bool GetKeyDown(sf::Event& evt, int KeyCode);
+	bool GetKeyDown(int KeyCode);
 
 	//key codes start from 0 (A = 0, B = 1, C = 2...) or you can use sf::Keyboard::Keyname
-	bool GetKeyUp(sf::Event& evt, int KeyCode);
+	bool GetKeyUp(int KeyCode);
 
 	//key codes start from 0 (A = 0, B = 1, C = 2...) or you can use sf::Keyboard::Keyname
-	bool GetKey(sf::Event& evt, int KeyCode);
+	bool GetKey(int KeyCode);
+
+	float GetAxis(const std::string& axis);
 
 };

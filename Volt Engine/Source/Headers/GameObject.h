@@ -26,6 +26,12 @@ public:
 	Transform transform;
 	bool Automatic_Drawing = true;
 
+	// movement
+	bool moveRight = false;
+	bool moveLeft = false;
+	bool moveUp = false;
+	bool moveDown = false;
+
 
 	// constructor
 	GameObject(float Width, float Height,

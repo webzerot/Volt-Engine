@@ -17,11 +17,12 @@
 #include "Vector.h"
 #include "Transform.h"
 #include "Globals.h"
+#include "Random.h"
 
 // pre declared functions
 void Start(sf::RenderWindow& window);
-void Update(sf::RenderWindow& window, float delta_time);
-void EventUpdate(sf::Event& event, float delta_time);
+void Update(sf::RenderWindow& window);
+void EventUpdate(sf::Event& event);
 
 // engine macros
 #define print(x) std::cout<<x<<std::endl;
@@ -31,9 +32,9 @@ void EventUpdate(sf::Event& event, float delta_time);
 #define PressedKey sf::Keyboard::isKeyPressed
 #define Key sf::Keyboard
 
-#define StartArg sf::RenderWindow& window
-#define EventArg sf::Event& evt, float delta_time
-#define UpdateArg sf::RenderWindow& window, float delta_time
+#define StartArg
+#define EventArg sf::Event& evt
+#define UpdateArg
 
 class Console {
 public:
